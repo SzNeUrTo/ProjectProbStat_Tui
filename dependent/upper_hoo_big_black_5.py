@@ -22,14 +22,12 @@ def removeCards(cards, removeList):
 def randomCards(cards, removeList):
     cards = removeCards(cards, removeList)
     random.shuffle(cards)
-    while set(['1_king_red','2_airplane_red','3_eleplant_red']).issubset(cards[0:4]) :
+    while set(['1_king_red','2_airplane_red','3_eleplant_red']).issubset(cards[0:3]) :
         random.shuffle(cards)
 
-    temp = [x for x in removeList[1:]]
-    random.shuffle(temp)
-    temp = removeList + temp
-    inHand = temp[:4]+ cards[:4]
-    outHand = cards[4:] + temp[4:]
+    temp = removeList + removeList[1:]
+    inHand = temp + cards[:3]
+    outHand = cards[3:]
     random.shuffle(outHand)
 
     cards = inHand + outHand
@@ -45,8 +43,7 @@ def cardsCheckUpper(players):
         if players.index(player) != 0 :
 
             if player.count('1_king_red') == 1 :
-                if player.count('2_airplane_red') >= 2 and player.count('3_eleplant_red') >= 1 \
-                or player.count('2_airplane_red') >= 1 and player.count('3_eleplant_red') >= 2 :
+                if player.count('2_airplane_red') >= 2 and player.count('3_eleplant_red') >= 2 :
                     return 1
 
     return 0
