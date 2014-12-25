@@ -1,0 +1,4 @@
+WashCard (No 1 2 3)
+grep -v '1_king_black' | grep -v '2_airplane_black' | grep -v '3_eleplant_black' | grep -v '1_king_red' | grep -v '2_airplane_red' | grep -v '3_eleplant_red'
+
+grep -v '1_' | grep -v '2_' | grep -v '3_'

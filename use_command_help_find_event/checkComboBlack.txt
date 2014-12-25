@@ -1,0 +1,48 @@
+this file is search black
+grep player1
+
+3 HooBigblack
+grep '1_king_black 2_airplane_black 3_eleplant_black' | grep -v '1_king_black 2_airplane_black 3_eleplant_black 3_eleplant_black'
+
+4 HooBigblack
+grep '1_king_black 2_airplane_black 3_eleplant_black 3_eleplant_black'
+grep '1_king_black 2_airplane_black 2_airplane_black 3_eleplant_black'
+
+5 HooBigblack
+grep '1_king_black 2_airplane_black 3_eleplant_black 3_eleplant_black 3_eleplant_black'
+
+3 HooLittleblack
+grep '4_boat_black 5_horse_black 6_biggun_black' | grep -v '4_boat_black 4_boat_black' | grep -v '5_horse_black 5_horse_black' | grep -v '6_biggun_black 6_biggun_black'
+
+4 HooLittleblack
+grep '4_boat_black 4_boat_black 5_horse_black 6_biggun_black | grep -v '6_biggun_black 6_biggun_black'
+grep '4_boat_black 5_horse_black 5_horse_black 6_biggun_black | grep -v '6_biggun_black 6_biggun_black' | grep -v '4_boat_black 4_boat_black'
+grep '4_boat_black 5_horse_black 6_biggun_black 6_biggun_black | grep -v '4_boat_black 4_boat_black'
+
+5 HooLittleblack
+grep '4_boat_black 5_horse_black 5_horse_black 6_biggun_black 6_biggun_black' | grep -v '4_boat_black 4_boat_black'
+grep '4_boat_black 4_boat_black 5_horse_black 5_horse_black 6_biggun_black' | grep -v '6_biggun_black 6_biggun_black'
+grep '4_boat_black 4_boat_black 5_horse_black 6_biggun_black 6_biggun_black' | grep -v '6_biggun_black 6_biggun_black'
+
+6 HooLittleblack
+grep '4_boat_black 4_boat_black 5_horse_black 5_horse_black 6_biggun_black 6_biggun_black'
+
+3 Jookblack
+grep '7_soilder_black 7_soilder_black 7_soilder_black' | grep -v '7_soilder_black 7_soilder_black 7_soilder_black 7_soilder_black'
+
+4 Jookblack
+grep '7_soilder_black 7_soilder_black 7_soilder_black 7_soilder_black' | grep -v '7_soilder_black 7_soilder_black 7_soilder_black 7_soilder_black 7_soilder_black'
+
+5 Jookblack
+grep '7_soilder_black 7_soilder_black 7_soilder_black 7_soilder_black 7_soilder_black'
+
+Couple
+grep '2_airplane_black 2_airplane_black'
+grep '3_eleplant_black 3_eleplant_black'
+grep '4_boat_black 4_boat_black'
+grep '5_horse_black 5_horse_black'
+grep '6_biggun_black 6_biggun_black'
+
+Couple SuperCase
+grep '7_soilder_black 7_soilder_black'
+

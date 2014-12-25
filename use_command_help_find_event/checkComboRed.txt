@@ -1,0 +1,47 @@
+this file is search red
+grep player1
+
+3 HooBigred
+grep '1_king_red 2_airplane_red 3_eleplant_red' | grep -v '1_king_red 2_airplane_red 3_eleplant_red 3_eleplant_red'
+
+4 HooBigred
+grep '1_king_red 2_airplane_red 3_eleplant_red 3_eleplant_red'
+grep '1_king_red 2_airplane_red 2_airplane_red 3_eleplant_red'
+
+5 HooBigred
+grep '1_king_red 2_airplane_red 3_eleplant_red 3_eleplant_red 3_eleplant_red'
+
+3 HooLittlered
+grep '4_boat_red 5_horse_red 6_biggun_red' | grep -v '4_boat_red 4_boat_red' | grep -v '5_horse_red 5_horse_red' | grep -v '6_biggun_red 6_biggun_red'
+
+4 HooLittlered
+grep '4_boat_red 4_boat_red 5_horse_red 6_biggun_red | grep -v '6_biggun_red 6_biggun_red'
+grep '4_boat_red 5_horse_red 5_horse_red 6_biggun_red | grep -v '6_biggun_red 6_biggun_red' | grep -v '4_boat_red 4_boat_red'
+grep '4_boat_red 5_horse_red 6_biggun_red 6_biggun_red | grep -v '4_boat_red 4_boat_red'
+
+5 HooLittlered
+grep '4_boat_red 5_horse_red 5_horse_red 6_biggun_red 6_biggun_red' | grep -v '4_boat_red 4_boat_red'
+grep '4_boat_red 4_boat_red 5_horse_red 5_horse_red 6_biggun_red' | grep -v '6_biggun_red 6_biggun_red'
+grep '4_boat_red 4_boat_red 5_horse_red 6_biggun_red 6_biggun_red' | grep -v '6_biggun_red 6_biggun_red'
+
+6 HooLittlered
+grep '4_boat_red 4_boat_red 5_horse_red 5_horse_red 6_biggun_red 6_biggun_red'
+
+3 Jookred
+grep '7_soilder_red 7_soilder_red 7_soilder_red' | grep -v '7_soilder_red 7_soilder_red 7_soilder_red 7_soilder_red'
+
+4 Jookred
+grep '7_soilder_red 7_soilder_red 7_soilder_red 7_soilder_red' | grep -v '7_soilder_red 7_soilder_red 7_soilder_red 7_soilder_red 7_soilder_red'
+
+5 Jookred
+grep '7_soilder_red 7_soilder_red 7_soilder_red 7_soilder_red 7_soilder_red'
+
+Couple
+grep '2_airplane_red 2_airplane_red'
+grep '3_eleplant_red 3_eleplant_red'
+grep '4_boat_red 4_boat_red'
+grep '5_horse_red 5_horse_red'
+grep '6_biggun_red 6_biggun_red'
+
+Couple SuperCase
+grep '7_soilder_red 7_soilder_red'
