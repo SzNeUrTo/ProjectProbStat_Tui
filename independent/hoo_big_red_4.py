@@ -14,13 +14,10 @@ for round in range(1, int(n+1)):
     for i in range(0,4):
         players[i].sort()
         if players[i].count('1_king_red') == 1:
-            if players[i].count('2_airplane_red') == 2:
-                if players[i].count('3_eleplant_red') == 1:
-                    sum += 1
-        if players[i].count('1_king_red') == 1:
-            if players[i].count('2_airplane_red') == 1:
-                if players[i].count('3_eleplant_red') == 2:
-                    sum += 1
+            if players[i].count('2_airplane_red') == 2 and players[i].count('3_eleplant_red') == 1 \
+            or players[i].count('2_airplane_red') == 1 and players[i].count('3_eleplant_red') == 2 :
+                sum += 1
+                
 print sum
 percent = sum / n * 100
 print str(percent) + ' %'
