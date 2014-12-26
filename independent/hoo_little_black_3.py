@@ -12,9 +12,9 @@ for round in range(1, int(n+1)):
 
     for player in players :
         if player.count('4_boat_red') == 1 :
-            if player.count('5_horse_red') == 2 and player.count('6_biggun_red') == 1 \
-            or player.count('5_horse_red') == 1 and player.count('6_biggun_red') == 2 :
-                sum += 1
+            if player.count('5_horse_red') == 1 :
+                if player.count('6_biggun_red') == 1 :
+                    sum += 1
     
 print sum
 percent = sum / n * 100

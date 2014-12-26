@@ -49,7 +49,7 @@ for round in range(1, int(samapleSpace+1)):
     cards = removeCards(cards, removeList, cardsUpper)
     cards = randomCards(cards, removeList, cardsUpper)
     players = createPlayersHand(players, cards)
- cards   event += cardsCheckUpper(players, cardsUpper)
+    event += cardsCheckUpper(players, cardsUpper)
     printCardsPlayers(players)
 
 print '=' * 150
