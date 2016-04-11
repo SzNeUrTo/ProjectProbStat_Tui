@@ -4,3 +4,7 @@
 
 [![](youtube_image.png)](https://www.youtube.com/watch?v=RgBX5JgK­Sk "ProjectProbStat_Tui")
 
+### Screenshot
+![Screenshot](https://raw.githubusercontent.com/SzNeUrTo/ProjectProbStat_Tui/master/tui_screenshot.png)
+
+
